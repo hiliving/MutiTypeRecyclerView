@@ -1,2 +1,2 @@
 # MutiTypeRecyclerView
-超简单给RecyclerView添加多个头布局,多条目类型
+给RecyclerView添加多个头布局,多条目类型
