@@ -88,10 +88,9 @@ public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<BaseRe
         int layoutId = items.getItemLayoutId(viewType);
         LayoutInflater inflater = LayoutInflater.from(context);
         View root = inflater.inflate(layoutId, parent, false);
-        return new BaseRecyclerHolder(getContext(),layoutId, root);
+        return new BaseRecyclerHolder(context,layoutId, root);
     }
 
-    protected abstract Context getContext();
 
     @Override
     public void onBindViewHolder(BaseRecyclerHolder holder, int position) {

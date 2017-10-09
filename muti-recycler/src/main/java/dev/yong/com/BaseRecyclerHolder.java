@@ -90,21 +90,13 @@ public class BaseRecyclerHolder extends RecyclerView.ViewHolder {
 
     /**
      * @param url
-     * @param defaultRes
      * @param viewId
      * @return
      */
-    public BaseRecyclerHolder setImageView(String url, int defaultRes, int viewId) {
+    public BaseRecyclerHolder setImageView(String url,int viewId) {
         ImageView iv = getView(viewId);
-        if (!TextUtils.isEmpty(url)) {
-            if (!url.equals(iv.getTag())) {//增加tag标记，减少UIL的display次数
-                iv.setTag(url);
-                GlideImageLoader imageLoader = new GlideImageLoader();
-                imageLoader.displayImage(context,url,iv);
-            }
-        } else {
-            iv.setImageResource(defaultRes);
-        }
+        GlideImageLoader imageLoader = new GlideImageLoader();
+        imageLoader.displayImage(context,url,iv);
         return this;
     }
 

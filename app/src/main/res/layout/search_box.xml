@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="北京"
+        android:layout_marginLeft="8dp"
+        />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_bg"
+        android:padding="4dp"
+        android:textSize="14sp"
+        android:textColor="#484848"
+        android:hint="北京市海淀区中关村大街"
+        />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:src="@mipmap/commons_nullpage_message_null"
+        android:layout_marginRight="10dp"
+        />
+</LinearLayout>
